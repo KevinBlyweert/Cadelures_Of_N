@@ -2,4 +2,4 @@
 
 Only front-end website, with some CSS and Vanilla JS.
 
-I hope I made a clean one.
+Here to expose what I can do with ink and feather.
