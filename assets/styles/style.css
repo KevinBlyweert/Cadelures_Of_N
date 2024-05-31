@@ -1,5 +1,5 @@
 @import "./slider.css";
-@import "./card.css";
+/* @import "./card.css"; */
 
 :root {
     --color-darkmode: #111927;
@@ -60,11 +60,12 @@
 }
 
 body {
-    font-size: var(--size-step-1);
+    font-size: var(--size-step-0);
     background: var(--bg);
     color: var(--fontColor);
     margin: 0;
     padding: 0;
+    font-family: "Delius", cursive;
 }
 
 h1 {
@@ -93,7 +94,15 @@ header {
     position: relative;
 }
 
-.grid {
+p {
+    text-align: center;
+}
+
+main{
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    .grid {
+    margin-top: var(--space-s);
     margin-left: auto;
     margin-right: auto;
     max-width: 80rem;
@@ -101,8 +110,7 @@ header {
     display: grid;
     align-items: center;
     justify-content: center;
-    padding: var(--gutter);
     gap: var(--gutter);
     grid-template-columns: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size), 1fr));
-
-}
+    /* grid-template-rows: repeat(var(--grid-placement, auto-fill), minmax(var(--grid-min-item-size), 1fr)); */
+}}
